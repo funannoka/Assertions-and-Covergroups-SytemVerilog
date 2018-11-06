@@ -1,0 +1,104 @@
+0 
+28
++systemverilogext+.sv
+-Mamsrun=
+-Masflags=--32
+-Mcc=gcc
+-Mcfl= -pipe -m32 -fPIC -O -I/apps/synopsys/VCSMX_NEW/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mldflags=-m32 -m32
+-Mobjects= /apps/synopsys/VCSMX_NEW/linux/lib/libvirsim.so /apps/synopsys/VCSMX_NEW/linux/lib/librterrorinf.so /apps/synopsys/VCSMX_NEW/linux/lib/libsnpsmalloc.so
+-Mout=simv
+-Msaverestoreobj=/apps/synopsys/VCSMX_NEW/linux/lib/vcs_save_restore_new.o
+-Msyslibs=/apps/synopsys/VCSMX_NEW/linux/lib/ctype-stubs_32.a -ldl
+-Mvcsaceobjs=
+-assert
+-cm
+-cm_cond
+-cm_count
+-gen_obj
+-lca
+-picarchive
+-sverilog
+/apps/synopsys/VCSMX_NEW/linux/bin/vcs1
+allops+for+full
+line+cond+fsm
+svaext
+tbbt.sv
+61
+sysc_uni_pwd=/home/010754159@SJSUAD.SJSU.EDU/EECE272/ddr3_rough/bintree
+XRDP_SOCKET_PATH=/tmp/.xrdp
+XRDP_SESSION=1
+XMODIFIERS=@im=none
+XDG_SESSION_ID=10779
+XDG_RUNTIME_DIR=/run/user/467928306
+XDG_MENU_PREFIX=gnome-
+XDG_DATA_DIRS=/home/010754159@SJSUAD.SJSU.EDU/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+XDG_CURRENT_DESKTOP=GNOME
+VTE_VERSION=4804
+VMR_MODE_FLAG=32
+VENDOR=unknown
+VCS_MX_HOME_INTERNAL=1
+VCS_LCAMSG_PRINT_OFF=1
+VCS_HOME=/apps/synopsys/VCSMX_NEW
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH=linux
+VCS_AMD_PURE32=1
+VCSMX_HOME=/apps/synopsys/VCSMX_NEW
+UNAME=/bin/uname
+TOOL_HOME=/apps/synopsys/VCSMX_NEW/linux
+TK_LIBRARY=/apps/synopsys/VCSMX_NEW/etc/auxx/tcllib/tk8.4/library
+SSH_AUTH_SOCK=/run/user/467928306/keyring/ssh
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SSH_AGENT_PID=17026
+SNPSLMS_LICENSE_FILE=27000@innersanctum.engr.sjsu.edu:/apps/synopsys/license/current-license-key
+SFLM_SERVER=innersanctum
+SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/16677,unix/unix:/tmp/.ICE-unix/16677
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+QT_IM_MODULE=xim
+QTLIB=/usr/lib64/qt-3.3/lib
+QTINC=/usr/lib64/qt-3.3/include
+QTDIR=/usr/lib64/qt-3.3
+PULSE_SCRIPT=/etc/xrdp/pulse/default.pa
+OVA_UUM=0
+OSTYPE=linux
+MODULESHOME=/usr/share/Modules
+MODULEPATH=/etc/scl/modulefiles:/etc/scl/modulefiles:/etc/scl/modulefiles:/usr/share/Modules/modulefiles:/etc/modulefiles:/usr/share/modulefiles
+LOADEDMODULES=
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LC_ALL=C
+KRB5CCNAME=KEYRING:persistent:467928306
+KDEDIRS=/usr
+IMSETTINGS_MODULE=none
+IMSETTINGS_INTEGRATE_DESKTOP=yes
+HOSTTYPE=x86_64-linux
+HISTCONTROL=ignoredups
+GTK_IM_MODULE=gtk-im-context-simple
+GROUP=domain users
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+GJS_DEBUG_TOPICS=JS ERROR;JS LOG
+GJS_DEBUG_OUTPUT=stderr
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/467928306/bus
+COLORTERM=truecolor
+CDS_LIC_FILE=5280@innersanctum.engr.sjsu.edu:/apps/cadence/license-current
+CDSLMD_LICENSE_FILE=5280@innersanctum.engr.sjsu.edu:/apps/cadence/license-current
+BASH_FUNC_scl%%=() {  local CMD=$1;_ if [ "$CMD" = "load" -o "$CMD" = "unload" ]; then_ eval "module $@";_ else_ /usr/bin/scl "$@";_ fi_}
+BASH_FUNC_module%%=() {  eval `/usr/bin/modulecmd bash $*`_}
+ARCH=linux
+0
+4
+1509877621 btclass.sv
+1410372003 /apps/synopsys/VCSMX_NEW/etc/sva/rec_ltl_classes_package.svp
+1509877361 tbbt.sv
+1410372352 /apps/synopsys/VCSMX_NEW/include/cm_vcsd.tab
+4
+0 
+1410372690 /apps/synopsys/VCSMX_NEW/linux/lib/libvirsim.so
+1410372633 /apps/synopsys/VCSMX_NEW/linux/lib/librterrorinf.so
+1410372654 /apps/synopsys/VCSMX_NEW/linux/lib/libsnpsmalloc.so
+1510202734 simv.daidir

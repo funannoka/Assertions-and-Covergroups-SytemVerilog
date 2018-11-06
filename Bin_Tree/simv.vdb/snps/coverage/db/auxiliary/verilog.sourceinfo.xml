@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!DOCTYPE cov SYSTEM "ucdb_srcinfo.dtd">
+  <srcinfo name="/home/010754159@SJSUAD.SJSU.EDU/EECE272/ddr3_rough/bintree"  >
+    <ucapi_version  major_ver="13"  minor_ver="1"  patch_str="I-2014.03-2"  />
+      <fileinfo name="tbbt.sv"  id="0"  />
+      <fileinfo name="btclass.sv"  id="1"  />
+      <fileinfo name="/apps/synopsys/VCSMX_NEW/etc/sva/rec_ltl_classes_package.svp"  id="2"  />
+    </srcinfo>
