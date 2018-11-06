@@ -1,0 +1,65 @@
+Assertions
+
+
+Assertions by Category
+           ASSERT PROPERTIES SEQUENCES
+Total          13          0         0
+Category 0     13          0         0
+
+-------------------------------------------------------------------------------
+
+Assertions by Severity
+           ASSERT PROPERTIES SEQUENCES
+Total          13          0         0
+Severity 0     13          0         0
+
+-------------------------------------------------------------------------------
+
+Summary for Assertions
+                        NUMBER PERCENT
+Total Number                13  100.00
+Not Covered                  0    0.00
+At Least 1 Real Success     13  100.00
+At Least 1 Failure          11   84.62
+At Least 1 Incomplete        1    7.69
+Without Attempts             0    0.00
+
+-------------------------------------------------------------------------------
+
+Detail Report for Assertions
+
+Assertions At Least 1 Real Success:
+       ASSERTIONS        CATEGORY SEVERITY ATTEMPTS REAL SUCCESSES FAILURES INCOMPLETE
+testbench.d.unnamed$$_1         0        0     4010             10        0          0
+testbench.d.unnamed$$_10        0        0     4010            175      131          0
+testbench.d.unnamed$$_11        0        0     4010             91        0          0
+testbench.d.unnamed$$_12        0        0     4010             16       31          0
+testbench.d.unnamed$$_13        0        0     4010             10       16          0
+testbench.d.unnamed$$_2         0        0     4010            118       99          0
+testbench.d.unnamed$$_3         0        0     4010            240      303          0
+testbench.d.unnamed$$_4         0        0     4010            241      313          0
+testbench.d.unnamed$$_5         0        0     4010            225      227          1
+testbench.d.unnamed$$_6         0        0     4010            244      250          0
+testbench.d.unnamed$$_7         0        0     4010            201      262          0
+testbench.d.unnamed$$_8         0        0     4010            193      227          0
+testbench.d.unnamed$$_9         0        0     4010            189      197          0
+
+Assertions At Least 1 Failure:
+       ASSERTIONS        CATEGORY SEVERITY ATTEMPTS REAL SUCCESSES FAILURES INCOMPLETE
+testbench.d.unnamed$$_10        0        0     4010            175      131          0
+testbench.d.unnamed$$_12        0        0     4010             16       31          0
+testbench.d.unnamed$$_13        0        0     4010             10       16          0
+testbench.d.unnamed$$_2         0        0     4010            118       99          0
+testbench.d.unnamed$$_3         0        0     4010            240      303          0
+testbench.d.unnamed$$_4         0        0     4010            241      313          0
+testbench.d.unnamed$$_5         0        0     4010            225      227          1
+testbench.d.unnamed$$_6         0        0     4010            244      250          0
+testbench.d.unnamed$$_7         0        0     4010            201      262          0
+testbench.d.unnamed$$_8         0        0     4010            193      227          0
+testbench.d.unnamed$$_9         0        0     4010            189      197          0
+
+Assertions At Least 1 Incomplete:
+       ASSERTIONS       CATEGORY SEVERITY ATTEMPTS REAL SUCCESSES FAILURES INCOMPLETE
+testbench.d.unnamed$$_5        0        0     4010            225      227          1
+
+

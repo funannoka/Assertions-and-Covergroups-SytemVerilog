@@ -1,0 +1,14 @@
+Design Module List
+
+Total Module Definition Coverage Summary 
+SCORE  LINE   COND   TOGGLE FSM    ASSERT 
+ 98.18  97.73 100.00  95.00 --     100.00 
+
+
+Total modules in report: 3
+-------------------------------------------------------------------------------
+SCORE  LINE   COND   TOGGLE FSM    ASSERT NAME      
+ 95.00 --     --      95.00 --     --     intf      
+ 98.84  97.67 100.00 --     --     --     testbench 
+100.00 100.00 --     --     --     100.00 dut       
+

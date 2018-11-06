@@ -1,0 +1,317 @@
+===============================================================================
+Module : intf
+===============================================================================
+SCORE  LINE   COND   TOGGLE FSM    ASSERT 
+ 95.00 --     --      95.00 --     --     
+
+Source File(s) : 
+
+/home/010754159@SJSUAD.SJSU.EDU/EECE272/assertions/assertions/tbsm.sv
+
+Module self-instances :
+
+SCORE  LINE   COND   TOGGLE FSM    ASSERT NAME          
+ 95.00 --     --      95.00 --     --     testbench.ifx 
+
+
+
+-------------------------------------------------------------------------------
+Toggle Coverage for Module : intf
+                Total Covered Percent 
+Totals          4     3       75.00   
+Total Bits      20    19      95.00   
+Total Bits 0->1 10    9       90.00   
+Total Bits 1->0 10    10      100.00  
+
+                              
+Signals          4  3  75.00  
+Signal Bits      20 19 95.00  
+Signal Bits 0->1 10 9  90.00  
+Signal Bits 1->0 10 10 100.00 
+
+Signal Details
+               Toggle Toggle 1->0 Toggle 0->1 
+clk            Yes    Yes         Yes         
+rst            No     Yes         No          
+state[3:0]     Yes    Yes         Yes         
+old_state[3:0] Yes    Yes         Yes         
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : testbench.ifx
+===============================================================================
+
+Instance :
+
+SCORE  LINE   COND   TOGGLE FSM    ASSERT 
+ 95.00 --     --      95.00 --     --     
+
+
+Instance's subtree :
+
+SCORE  LINE   COND   TOGGLE FSM    ASSERT 
+ 95.00 --     --      95.00 --     --     
+
+
+Module : 
+
+SCORE  LINE   COND   TOGGLE FSM    ASSERT NAME 
+ 95.00 --     --      95.00 --     --     intf 
+
+
+Parent : 
+
+SCORE  LINE   COND   TOGGLE FSM    ASSERT NAME      
+ 98.84  97.67 100.00 --     --     --     testbench 
+
+
+Subtrees :
+
+
+no children
+----------------
+
+
+-------------------------------------------------------------------------------
+Since this is the module's only instance, the coverage report is the same as for the module.
+===============================================================================
+Module : testbench
+===============================================================================
+SCORE  LINE   COND   TOGGLE FSM    ASSERT 
+ 98.84  97.67 100.00 --     --     --     
+
+Source File(s) : 
+
+/home/010754159@SJSUAD.SJSU.EDU/EECE272/assertions/assertions/tbsm.sv
+
+Module self-instances :
+
+SCORE  LINE   COND   TOGGLE FSM    ASSERT NAME      
+ 98.84  97.67 100.00 --     --     --     testbench 
+
+
+
+-------------------------------------------------------------------------------
+Line Coverage for Module : testbench
+
+             Line No.   Total   Covered  Percent
+TOTAL                       43       42    97.67
+INITIAL            28        9        9   100.00
+INITIAL            41        7        7   100.00
+ALWAYS             49       27       26    96.30
+
+27                      initial begin
+28         1/1            ifx.state=0;
+29         1/1            ifx.clk=0;
+30         1/1            ifx.rst=1;
+31         1/1            ##10;
+32         1/1            ifx.rst=0;
+33                      //  while(cv2.cp2.get_coverage()<25) ##5;
+34         1/1            ##4000;
+35         1/1            $display("\n\n\nAt the end of the run\n\n\n");
+36         1/1            $display("Time is ",$time);
+37         1/1            $finish;
+38                      end
+39                      
+40                      initial begin
+41         1/1            ifx.clk=0;
+42         2/2            forever #5 begin
+43         1/1              ifx.clk=~ifx.clk;
+44         3/3              if(ifx.clk==1) #1 -> fun;
+                        MISSING_ELSE
+45                        end
+46                      end
+47                      
+48                      always @(fun) begin
+49         1/1            ifx.old_state=ifx.state;
+50         1/1            if(ifx.rst || ifx.state==9) begin
+51         1/1              ifx.state=0;
+52                        end else begin
+53         1/1              case(ifx.state)
+54         1/1                0: ifx.state=1;
+55         1/1                1: randcase
+56         1/1                     2: ifx.state=2;
+57         1/1                     2: ifx.state=4;
+                   ==>  MISSING_DEFAULT
+58                               endcase //ifx.state=(($random%2)>0)?2:4;
+59         1/1                2: ifx.state=3;
+60         1/1                3: ifx.state=(($random%10)>8)?5:1;
+61         1/1                4: ifx.state=5;
+62         1/1                5: ifx.state=(($random%20)>9)?1:6;
+63         1/1                6: ifx.state=7;
+64         1/1                7: randcase
+65         1/1                     5: ifx.state=0;
+66         1/1                     3: ifx.state=8;
+                   ==>  MISSING_DEFAULT
+67                               endcase
+68         1/1                8: randcase
+69         1/1                     19: ifx.state=2;
+70         1/1                     12: ifx.state=4;
+71         1/1                     8:  ifx.state=10;
+72         1/1                     6:  ifx.state=9;
+                   ==>  MISSING_DEFAULT
+73                               endcase
+74         0/1     ==>        9: ifx.state=8;
+75         1/1                10: ifx.state=0;
+76         1/1                default: ifx.state=4;
+77                          endcase
+78                          // an occasional error
+79         1/1              if(($random&32'h0ff)>120) begin
+80         1/1                ifx.state=ifx.state+1;
+81         1/1                $display("----------- bugged");
+82                          end
+                        MISSING_ELSE
+
+-------------------------------------------------------------------------------
+Cond Coverage for Module : testbench
+
+               Total   Covered  Percent
+Conditions          3        3   100.00
+Logical             3        3   100.00
+Non-Logical         0        0
+Event               0        0
+
+ LINE       50
+ EXPRESSION (testbench.ifx.rst || (testbench.ifx.state == 4'h9))
+             --------1--------    --------------2--------------
+
+-1- -2- Status
+ 0   0  Covered
+ 0   1  Covered
+ 1   0  Covered
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : testbench
+===============================================================================
+
+Instance :
+
+SCORE  LINE   COND   TOGGLE FSM    ASSERT 
+ 98.84  97.67 100.00 --     --     --     
+
+
+Instance's subtree :
+
+SCORE  LINE   COND   TOGGLE FSM    ASSERT 
+ 98.18  97.73 100.00  95.00 --     100.00 
+
+
+Module : 
+
+SCORE  LINE   COND   TOGGLE FSM    ASSERT NAME      
+ 98.84  97.67 100.00 --     --     --     testbench 
+
+
+Parent : 
+
+none
+----------------
+
+
+Subtrees :
+
+SCORE  LINE   COND   TOGGLE FSM    ASSERT NAME 
+100.00 100.00 --     --     --     100.00 d    
+ 95.00 --     --      95.00 --     --     ifx  
+
+
+
+-------------------------------------------------------------------------------
+Since this is the module's only instance, the coverage report is the same as for the module.
+===============================================================================
+Module : dut
+===============================================================================
+SCORE  LINE   COND   TOGGLE FSM    ASSERT 
+100.00 100.00 --     --     --     100.00 
+
+Source File(s) : 
+
+/home/010754159@SJSUAD.SJSU.EDU/EECE272/assertions/assertions/dut.sv
+
+Module self-instances :
+
+SCORE  LINE   COND   TOGGLE FSM    ASSERT NAME        
+100.00 100.00 --     --     --     100.00 testbench.d 
+
+
+
+-------------------------------------------------------------------------------
+Line Coverage for Module : dut
+
+             Line No.   Total   Covered  Percent
+TOTAL                        1        1   100.00
+ALWAYS              7        1        1   100.00
+
+6                       always @(posedge ix.clk)begin
+7          1/1            $display(ix.state);
+
+-------------------------------------------------------------------------------
+Assert Coverage for Module : dut
+                 Total Attempted Percent Succeeded/Matched Percent 
+Assertions       13    13        100.00  13                100.00  
+Cover properties 0     0                 0                         
+Cover sequences  0     0                 0                         
+Total            13    13        100.00  13                100.00  
+
+
+
+-------------------------------------------------------------------------------
+
+Assertion Details
+
+Name         Attempts Real Successes Failures Incomplete 
+unnamed$$_1  4010     10             0        0          
+unnamed$$_10 4010     175            131      0          
+unnamed$$_11 4010     91             0        0          
+unnamed$$_12 4010     16             31       0          
+unnamed$$_13 4010     10             16       0          
+unnamed$$_2  4010     118            99       0          
+unnamed$$_3  4010     240            303      0          
+unnamed$$_4  4010     241            313      0          
+unnamed$$_5  4010     225            227      1          
+unnamed$$_6  4010     244            250      0          
+unnamed$$_7  4010     201            262      0          
+unnamed$$_8  4010     193            227      0          
+unnamed$$_9  4010     189            197      0          
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : testbench.d
+===============================================================================
+
+Instance :
+
+SCORE  LINE   COND   TOGGLE FSM    ASSERT 
+100.00 100.00 --     --     --     100.00 
+
+
+Instance's subtree :
+
+SCORE  LINE   COND   TOGGLE FSM    ASSERT 
+100.00 100.00 --     --     --     100.00 
+
+
+Module : 
+
+SCORE  LINE   COND   TOGGLE FSM    ASSERT NAME 
+100.00 100.00 --     --     --     100.00 dut  
+
+
+Parent : 
+
+SCORE  LINE   COND   TOGGLE FSM    ASSERT NAME      
+ 98.84  97.67 100.00 --     --     --     testbench 
+
+
+Subtrees :
+
+
+no children
+----------------
+
+
+-------------------------------------------------------------------------------
+Since this is the module's only instance, the coverage report is the same as for the module.

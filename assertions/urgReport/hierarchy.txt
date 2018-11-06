@@ -1,0 +1,12 @@
+Design Hierarchy
+
+
+----------------
+SCORE  LINE   COND   TOGGLE FSM    ASSERT           
+ 98.18  97.73 100.00  95.00 --     100.00 testbench 
+  
+  ----------------
+  SCORE  LINE   COND   TOGGLE FSM    ASSERT     
+  100.00 100.00 --     --     --     100.00 d   
+   95.00 --     --      95.00 --     --     ifx 
+

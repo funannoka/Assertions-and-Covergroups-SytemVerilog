@@ -1,0 +1,21 @@
+Dashboard
+
+Date: Mon Nov 13 21:31:06 2017
+
+User: 010754159
+
+Version: I-2014.03-2
+Command line: urg -dir ./simv.vdb -format both 
+
+
+-------------------------------------------------------------------------------
+Total Coverage Summary 
+SCORE  LINE   COND   TOGGLE FSM    ASSERT GROUP  
+ 98.55  97.73 100.00  95.00 --     100.00 100.00 
+
+
+-------------------------------------------------------------------------------
+Hierarchical coverage data for top-level instances 
+SCORE  LINE   COND   TOGGLE FSM    ASSERT NAME      
+ 98.18  97.73 100.00  95.00 --     100.00 testbench 
+

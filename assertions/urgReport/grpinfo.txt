@@ -1,0 +1,103 @@
+Group : testbench.d::dutcg
+
+===============================================================================
+Group : testbench.d::dutcg
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING COMMENT 
+100.00 1      100    1        0            64           64                    
+
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   testbench.d::dutcg
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 12       0         12      100.00  
+
+
+Variables for Group  testbench.d::dutcg
+
+
+VARIABLE       EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+state_coverage 12       0         12      100.00  100  1      1        0                    
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable state_coverage
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 12       0         12      100.00  
+
+
+User Defined Bins for state_coverage
+
+
+Bins
+
+NAME COUNT AT LEAST  
+s12  10    1        
+s11  16    1        
+s10  91    1        
+s9   175   1        
+s8   189   1        
+s7   193   1        
+s6   201   1        
+s5   244   1        
+s4   225   1        
+s3   241   1        
+s2   240   1        
+s1   128   1        
+
+
+Group : testbench.d::cgr
+
+===============================================================================
+Group : testbench.d::cgr
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING COMMENT 
+100.00 1      100    1        0            64           64                    
+
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   testbench.d::cgr
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 1        0         1       100.00  
+
+
+Variables for Group  testbench.d::cgr
+
+
+VARIABLE       EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+reset_coverage 1        0         1       100.00  100  1      1        0                    
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable reset_coverage
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 1        0         1       100.00  
+
+
+User Defined Bins for reset_coverage
+
+
+Bins
+
+NAME COUNT AT LEAST  
+r0   1     1        
+
+

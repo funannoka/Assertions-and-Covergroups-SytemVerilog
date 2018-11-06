@@ -1,0 +1,31 @@
+<session version="1.1" release="I-2014.03-2" timestp="2017-11-14 05:31:03 GMT">
+  <hvp>
+    <datadef>
+      <metdef name="Line" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="Cond" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="Toggle" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="FSM" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="Assert" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="Group" type="percent" aggregator="average" builtin="1" />
+    </datadef>
+  </hvp>
+  <old_coverage>
+  <scope type="top" name="top">
+    <metric name="Line" value="43/44" />
+    <metric name="Cond" value="3/3" />
+    <metric name="Toggle" value="19/20" />
+    <metric name="Assert" value="13/13" />
+    <metric name="Group" value="100%" />
+  </scope>
+  <scope type="instance" name="top">
+  </scope>
+  <scope type="group" name="top">
+    <scope type="group" name="testbench.d::dutcg">
+      <metric name="Group" value="100%" />
+    </scope>
+    <scope type="group" name="testbench.d::cgr">
+      <metric name="Group" value="100%" />
+    </scope>
+  </scope>
+  </old_coverage>
+</session>
